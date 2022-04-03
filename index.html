@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Web ML</title>
+    
+    <link rel="shortcut icon" href="Favicons/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="Favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-touch-icon.png">
+    <link rel="manifest" href="Favicons/site.webmanifest">
+
+    <link rel="stylesheet" href="CSS/estilo.css">
+
+    <script src="JS/w3-Html-Includes.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/explicar.js"></script>
+    <script src="https://kit.fontawesome.com/8b48590a50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div incluir="Layout/navbar.html" class="header"></div>
+    
+    <main>
+        <header>
+            <h1 id="super-web-ml">Super Web ML</h1>
+        </header>
+        
+        <section>
+            <div>
+                <p>
+                    <a class="hidden" target="_blank" href="https://www.youtube.com/watch?v=OiuYl0oeDDE" rel="external">Hey</a>! Chamo-me Guilherme Baos e esta é a minha ML para IT Buddy, hope you like it!
+                </p>
+            </div>
+
+            <h2 id="who-am-i" class="topico"><a class="hidden" target="_blank" href="https://www.youtube.com/watch?v=jtXX3aAPPwg" rel="external">Who am I?</a></h2>
+            <p>
+                Sou portuense e estou no 1º ano de Engenharia Física. Tenho muita vontade de aprender, trabalhar em equipa e de me divertir! Para além do curso, também pratico karaté e toco guitarra.
+            </p>
+            <p>
+                Juntei-me ao BEST Porto logo no 1º semestre do curso, tendo ainda participado no SciTeCh'21. Até agora já pude trabalhar várias skills e conhecer muita malta fixe.
+            </p>
+
+            <h2 class="topico">Motivação</h2>
+            <p>
+                Assim que recebi no meu e-mail o aviso de que a call para IT Buddy estava aberta apercebi-me que este é o cargo ideal para mim neste momento.
+            </p>
+            <p>
+                Por um lado, tenho vontade de continuar a aprender mais sobre IT, visto ser uma das mais importantes ferramentas da atualidade e, por outro, quero ganhar capacidades de gestão de tempo e de coordenação de equipas<a class="hidden" target="_blank" href="https://www.youtube.com/watch?v=5-sfG8BV8wU&t=20s">!</a>
+            </p>
+            <p>
+                Por fim, quero também ter a oportunidade de trabalhar com o meu cooordenador favorito!
+            </p>
+
+            <h2 class="topico">Experiência e Disponibilidade</h2>
+            <p>
+                Comecei a programar em Python aos 14 anos e dei o salto para as linguagens Web com 16, com o objetivo de criar o <a href="https://www.simulafq.pt/">SimulaFQ</a>, desde então já criei vários sites e sitezinhos, que podem espreitar no meu <a href="https://github.com/guilhermebaos">GitHub</a>.
+            </p>
+            <p>
+                No BEST também já pude trabalhar dentro da equipa de IT na criação do site do BEST Porto.
+            </p>
+            <p>
+                Durante este semestre vou estar tão livre quanto qualquer outro estudante universitário :)
+            </p>
+
+            <h2 class="topico"><a class="hidden" href="https://www.youtube.com/watch?v=Sg14jNbBb-8" target="_blank" rel="noopener noreferrer external">Mega Projeto de IT</a></h2>
+            <p>
+                Se tivesse que escolher só um projeto para fazer com a equipa de IT, penso que ia dar muito jeito termos uma base dados de ideias e de KM!
+            </p>
+            <p>
+                Quanto à parte das ideias, a plataforma serviria só de base de dados com tags para a malta se inspirar. Para o KM podiamos ir dando update ao consenso sobre como se devem fazer as coisas, de forma a usar o conhecimento não só das útlimas edições de cada evento mas desde sempre!
+            </p>
+            <p>
+                Assim se calhar não tinhamos de ter estado o <a class="hidden" href="https://www.youtube.com/watch?v=PzcKJVtgaNA" target="_blank" rel="noopener noreferrer external">dobro do tempo necessário</a> a arrumar o tatami no MW.
+            </p>
+
+            
+            
+            <div class="m30"></div>
+
+            <p>
+                Se leste esta ML até ao fim mereces clicar <span class="anchor" onclick="mostrarExtra('video'); playVid()">aqui</span>!
+            </p>
+            <div id="video" class="explicar"><button class="fechar" onclick="mostrarExtra('video')">X</button><br>
+                <video id="myVideo">
+                    <source src="videos/Rick_Astley_Never_Gonna_Give_You_Up.mp4" type="video/mp4">
+                    <source src="videos/Rick_Astley_Never_Gonna_Give_You_Up.ogv" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+
+            <div class="m45"></div>
+
+            <p>
+                PS: Prova as tuas skills de Web Dev e descobre os Easter Eggs da ML ;) &rarr; <span class="anchor" onclick="mostrarExtra('pista')">Pista</span>
+            </p>
+            <div id="pista" class="explicar"><button class="fechar" onclick="mostrarExtra('pista')">X</button>
+                <p>
+                    Tab, Tab, Enter
+                </p>
+            </div>
+        </section>
+        
+        <button id="para-o-topo" onclick="paraOTopo()">&uparrow;</button>
+    </main>
+
+    <footer incluir='Layout/footer.html'></footer>
+
+    <script>
+        incluirHTML()
+
+        let video = document.getElementById("myVideo")
+
+        function playVid() {
+            video.play()
+        }
+    </script>
+    <script src="JS/para-o-topo.js"></script>
+</body>
+</html>
